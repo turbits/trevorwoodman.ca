@@ -1,0 +1,127 @@
+html {
+  height: 100%;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+body {
+  height: 96vh;
+  background-color: #e1e1e1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: 20px solid black;
+}
+
+.cutout-bg {
+  background: url("media/dustin-humes-Grw-rlz4bg8-unsplash.jpg") center;
+  background-size: cover;
+}
+
+.text-title {
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  mix-blend-mode: lighten;
+  color: #000000;
+  background: #e1e1e1;
+}
+
+.text-subtitle {
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+}
+
+.text-body {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1rem;
+}
+
+.text-large {
+  font-size: 1.6rem;
+}
+
+.margin {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: auto;
+  text-align: center;
+}
+
+.center {
+  grid-area: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.email {
+  font-size: 1.2rem;
+}
+
+ul {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social {
+  cursor: pointer;
+  width: 25px;
+  margin: 0 10px 0 10px;
+  padding: 10px;
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.8s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
