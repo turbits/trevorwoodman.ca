@@ -2,11 +2,13 @@ html {
   height: 100%;
   overflow: hidden;
   font-size: 16px;
+  background-image: url("media/hulki-okan-tabak-x3kQTL7yw30-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body {
-  height: 96vh;
-  background-color: #e1e1e1;
+  height: 89.6vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -14,33 +16,45 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
-  border: 20px solid black;
+  border: 50px dashed #b39fc5;
+  /* border: 60px solid #111111; */
+  /* background-color: rgba(27, 27, 27, 0.8); */
+  background-color: rgba(26, 16, 32, 0.856);
 }
 
-.cutout-bg {
-  background: url("media/dustin-humes-Grw-rlz4bg8-unsplash.jpg") center;
-  background-size: cover;
+.br {
+  border-radius: 5px;
+}
+
+.btn-br {
+  border-radius: 10px
+}
+
+h1 {
+  margin-bottom: 5px;
 }
 
 .text-title {
-  font-size: 5rem;
-  font-weight: 700;
-  font-family: "Space Mono", monospace;
-  mix-blend-mode: lighten;
-  color: #000000;
-  background: #e1e1e1;
+  font-family: "Space Mono", sans-serif;
+  font-size: 8rem;
+  font-weight: 900;
+  color: #b39fc5;
+  /* border: 6px ridge #d6d6d6; */
+  padding: 20px;
 }
 
 .text-subtitle {
-  font-weight: 700;
-  font-family: "Space Mono", monospace;
+  font-family: "Space Mono", sans-serif;
+  font-weight: 400;
+  font-family: sans-serif;
 }
 
 .text-body {
+  font-family: "Space Mono", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
   line-height: 1rem;
+  margin-bottom: 20px;
 }
 
 .text-large {
@@ -55,6 +69,7 @@ body {
 .container {
   width: auto;
   text-align: center;
+  
 }
 
 .center {
@@ -65,34 +80,53 @@ a {
   text-decoration: none;
 }
 
-.email {
-  font-size: 1.2rem;
-}
-
-ul {
-  text-align: center;
+.socials {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  list-style-type: none;
+  /* text-align: center; */
+  flex-wrap: nowrap;
   padding: 0;
   margin: 0;
 }
 
 .social {
   cursor: pointer;
-  width: 25px;
-  margin: 0 10px 0 10px;
+  width: 35px;
   padding: 10px;
+  margin: 0 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social:hover {
+  transform: rotate(10deg);
 }
 
 .wave {
   animation-name: wave-animation;
   animation-duration: 2.8s;
   animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+.wave2 {
+  animation-name: wave-animation;
+  animation-duration: 2.4s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+.wave3 {
+  animation-name: wave-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
@@ -105,7 +139,7 @@ ul {
   }
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
   20% {
     transform: rotate(-8deg);
   }
@@ -120,7 +154,7 @@ ul {
   }
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  }
   100% {
     transform: rotate(0deg);
   }
