@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  height: 89.6vh;
+  height: 84vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -16,7 +16,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
-  border: 50px dashed #b39fc5;
+  border: 80px dashed #b39fc5;
   /* border: 60px solid #111111; */
   /* background-color: rgba(27, 27, 27, 0.8); */
   background-color: rgba(26, 16, 32, 0.856);
@@ -36,11 +36,12 @@ h1 {
 
 .text-title {
   font-family: "Space Mono", sans-serif;
-  font-size: 8rem;
+  font-size: 9rem;
   font-weight: 900;
   color: #b39fc5;
-  /* border: 6px ridge #d6d6d6; */
+  /* border: 18px solid #b39fc5; */
   padding: 20px;
+  margin-bottom: 50px;
 }
 
 .text-subtitle {
